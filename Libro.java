@@ -4,14 +4,13 @@ public class Libro {
     private String autor;
     private boolean disponible;
 
-    // Constructor
     public Libro(String titulo, String autor) {
         setTitulo(titulo);
         this.autor = autor;
         this.disponible = true;
     }
 
-    // Getters y Setters
+
     public String getTitulo() { return titulo; }
 
     public void setTitulo(String titulo) {
@@ -28,7 +27,7 @@ public class Libro {
     public boolean isDisponible() { return disponible; }
     public void setDisponible(boolean disponible) { this.disponible = disponible; }
 
-    // Métodos
+    
     public void mostrarInfo() {
         System.out.println("📖 Libro: " + titulo);
         System.out.println("   Autor: " + autor);
